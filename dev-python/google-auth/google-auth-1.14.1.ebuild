@@ -27,8 +27,11 @@ RDEPEND="
 DEPEND="${RDEPEND}
 	test? (
 		>=dev-python/flask-1.1.2[${PYTHON_USEDEP}]
+		>=dev-python/freezegun-0.3.15[${PYTHON_USEDEP}]
 		>=dev-python/mock-3.0.5-r1[${PYTHON_USEDEP}]
+		>=dev-python/oauth2client-4.1.3[${PYTHON_USEDEP}]
 		>=dev-python/pytest-localserver-0.5.0[${PYTHON_USEDEP}]
+		>=dev-python/responses-0.10.7[${PYTHON_USEDEP}]
 	)
 "
 
