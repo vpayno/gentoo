@@ -10,6 +10,7 @@ inherit distutils-r1
 DESCRIPTION="Python library to manipulate Google APIs"
 HOMEPAGE="https://github.com/google/apitools"
 SRC_URI="https://github.com/google/apitools/archive/v${PV}.tar.gz -> ${P}.tar.gz"
+S="${WORKDIR}/apitools-${PV}"
 
 LICENSE="Apache-2.0"
 SLOT="0"
@@ -30,9 +31,8 @@ BDEPEND="
 	)
 "
 
-S="${WORKDIR}/apitools-${PV}"
-
 PATCHES=(
+	"${FILESDIR}/${PN}-0.5.30-remove_network_tests.patch"
 	"${FILESDIR}/${PN}-0.5.30-skip-enum-test-on-new-python.patch"
 )
 
