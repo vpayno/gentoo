@@ -19,13 +19,13 @@ RESTRICT="!test? ( test )"
 REQUIRED_USE="|| ( $(python_gen_useflags 'python*') )"
 
 RDEPEND="
+	>=dev-python/google-api-python-client-1.8.2[${PYTHON_USEDEP}]
 	>=dev-python/httplib2-0.9.1[${PYTHON_USEDEP}]
-	>=dev-python/pyasn1-0.1.7[${PYTHON_USEDEP}]
-	>=dev-python/pyasn1-modules-0.0.5[${PYTHON_USEDEP}]
-	>=dev-python/rsa-3.1.4[${PYTHON_USEDEP}]
-	>=dev-python/six-1.6.1[${PYTHON_USEDEP}]
-	dev-python/keyring[${PYTHON_USEDEP}]
-	!<=dev-python/google-api-python-client-1.1[${PYTHON_USEDEP}]
+	>=dev-python/keyring-19.3.0[${PYTHON_USEDEP}]
+	>=dev-python/pyasn1-0.4.8[${PYTHON_USEDEP}]
+	>=dev-python/pyasn1-modules-0.2.8[${PYTHON_USEDEP}]
+	>=dev-python/rsa-4.0[${PYTHON_USEDEP}]
+	>=dev-python/six-1.14.0[${PYTHON_USEDEP}]
 "
 BDEPEND="${RDEPEND}
 	dev-python/setuptools[${PYTHON_USEDEP}]
